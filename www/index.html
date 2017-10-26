@@ -8,8 +8,19 @@
 </head>
 <body>
 
+
+
+
+
 <div data-role="page" id="pageone">
-  <div data-role="header">
+  <div data-role="panel" id="mypanel1" data-position="left" data-display="push" data-icon="arrow-r">
+    <a href="#pageone"><button>page one</button></a><br>
+    <a href="#pagetwo"><button>page two</button></a><br>
+    <a href="#pagethree"><button>page three</button></a>
+  </div>
+
+  <div data-role="header" data-fullscreen="true">
+    <a href="#mypanel" data-icon="bars" class="ui-btn-left">panel</a>
     <h1>Welcome To My Homepage</h1>
   </div>
 
@@ -18,12 +29,18 @@
   </div>
 
   <div data-role="footer" data-position="fixed" data-fullscreen="true">
-      <a href="#pagetwo">page two</a><a href="#pagethree">page three</a>
+      <a href="#mypanel">Open panel</a>
   </div>
 </div> 
 
 <div data-role="page" id="pagetwo">
+  <div data-role="panel" id="mypanel2" data-position="left" data-display="push" data-icon="arrow-r">
+    <a href="#pageone"><button>page one</button></a><br>
+    <a href="#pagetwo"><button>page two</button></a><br>
+    <a href="#pagethree"><button>page three</button></a>
+  </div>
   <div data-role="header">
+    <a href="#mypanel" data-icon="bars" class="ui-btn-left">panel</a>
     <h1>Welcome To My Homepage</h1>
   </div>
 
@@ -32,12 +49,18 @@
   </div>
 
   <div data-role="footer" data-position="fixed" data-fullscreen="true">
-    <a href="#pageone">page one</a><a href="#pagethree">page three</a>
+    <a href="#mypanel">Open panel</a>
   </div>
 </div> 
 
 <div data-role="page" id="pagethree">
+  <div data-role="panel" id="mypanel3" data-position="left" data-display="push" data-icon="arrow-r">
+    <a href="#pageone"><button>page one</button></a><br>
+    <a href="#pagetwo"><button>page two</button></a><br>
+    <a href="#pagethree"><button>page three</button></a>
+  </div>
   <div data-role="header">
+    <a href="#mypanel" data-icon="bars" class="ui-btn-left">panel</a>
     <h1>Welcome To My Homepage</h1>
   </div>
 
@@ -45,7 +68,7 @@
     <p>This is Page Three.</p>
   </div>
   <div data-role="footer" data-position="fixed" data-fullscreen="true">
-    <a href="#pageone">page one</a><a href="#pagetwo">page two</a>
+    <a href="#mypanel">Open panel</a>
   </div>
 </div>
 </body>
